@@ -3,7 +3,7 @@ import React from "react";
 const Child = ({showModal, handleClick}) => {
 
     return(
-        <div>
+        <div className="child">
             <button onclick={handleClick}>Show Modal</button>
 
             {
