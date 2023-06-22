@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div>
       <h1>Parent Component</h1>
-        <Parent/>
-        <h3>Child Component</h3>
-        <Child/>
+      <Parent/>
+        
+        
     </div>
   )
 }

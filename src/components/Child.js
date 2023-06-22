@@ -1,14 +1,24 @@
 import React from "react";
 
-const Child = ({showModal, handleClick}) => {
+const Child = ({showModal, setShowModal}) => {
+
+    function handleChange(e){
+        e.preventDefault();
+        setShowModal(true);
+    }
 
     return(
         <div className="child">
-            <button onclick={handleClick}>Show Modal</button>
+            <h2>Child Component</h2>
+            <button onClick={handleChange}>Show Modal</button>
 
             {
-                showModal && 
-                <p>This is the Modal content.</p>
+                showModal && (
+                    <div>
+                        <h3>Model Content</h3>
+                        <p>This is the modal content.</p>
+                    </div>
+                )
             }
         </div>
     )
